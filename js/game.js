@@ -45,6 +45,8 @@ Game.prototype.checkCollisions = function checkCollisions() {
 };
 
 Game.prototype.render = function render() {
+    CTX.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
     this.renderObject(this.playScreen);
     this.renderObject(this.monster);
     this.renderObject(this.hero);
